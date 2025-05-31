@@ -1,0 +1,11 @@
+# Configurações de build para o Netlify
+[build]
+  # Comando para construir o site
+  command = "npm run build"
+  # Diretório que contém os arquivos construídos
+  publish = ".next"
+
+# Plugin Next.js para Netlify
+# Este plugin garante que funcionalidades como SSR, ISR, API Routes, etc., funcionem corretamente.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
